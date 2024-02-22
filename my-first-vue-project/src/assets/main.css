@@ -1,0 +1,13 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Dans un fichier .css ou .vue */
+@font-face {
+  font-family: 'Figtree'; /* Nom de la police */
+  src: url('@/assets/fonts/Figtree/Figtree-Light.ttf') format('ttf'), /* Chemin vers le fichier de police */
+       url('@/assets/fonts/Figtree/Figtree-Italic.ttf') format('ttf');
+  /* Ajoute d'autres formats de fichiers si nécessaire */
+  font-weight: normal;
+  font-style: normal;
+}

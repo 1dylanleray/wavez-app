@@ -1,0 +1,57 @@
+{
+    "name": "Strive & Prosper Vol.1 (SP)",
+    "albumCover": "/images/albumCovers/ghostintheshell2.jpg",
+    "releaseYear": "2023",
+    "tracks": [
+        {
+            "id": 1,
+            "name": "24hours",
+            "path": "../beats/24hours.mp3"
+        },
+        {
+            "id": 2,
+            "name": "talk2me",
+            "path": "/beats/talk2me.mp3"
+        },
+        {
+            "id": 3,
+            "name": "lifetime",
+            "path": "/beats/lifetime.mp3"
+        },
+        {
+            "id": 4,
+            "name": "honor",
+            "path": "/beats/honor.mp3"
+        },
+        {
+            "id": 5,
+            "name": "honesty",
+            "path": "/beats/honesty.mp3"
+        },
+        {
+            "id": 6,
+            "name": "wya",
+            "path": "/beats/wya.mp3"
+        },
+        {
+            "id": 7,
+            "name": "babygyal",
+            "path": "/beats/babygyal.mp3"
+        },
+        {
+            "id": 8,
+            "name": "khaleesi",
+            "path": "/beats/khaleesi.mp3"
+        },
+        {
+            "id": 9,
+            "name": "muddy",
+            "path": "/beats/muddy.mp3"
+        },
+        {
+            "id": 10,
+            "name": "hard2forgive",
+            "path": "/beats/hard2forgive.mp3"
+        }
+    ]
+}
