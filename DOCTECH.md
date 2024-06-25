@@ -85,7 +85,7 @@ Votre projet doit contenir les fichiers suivants :
 
 Créez un fichier nommé `Dockerfile` dans le répertoire de `beatService.js` :
 
-```dockerfile
+``dockerfile
 # Utiliser l'image Node.js officielle comme image de base
 FROM node:14
 
