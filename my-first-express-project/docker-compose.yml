@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  beat-service:
+    build:
+      context: ./services/beatService
+    ports:
+      - "3000:3000"
+    networks:
+      - music-net
+    volumes:
+      - beat-data:/app/data
+
+  beats-service:
+    build:
+      context: ./services/beatsService
+    ports:
+      - "3001:3001"
+    networks:
+      - music-net
+    volumes:
+      - beat-data:/app/data
+
+  playlist-service:
+    build:
+      context: ./services/playlistService
+    ports:
+      - "3002:3002"
+    networks:
+      - music-net
+    volumes:
+      - playlist-data:/app/data
+
+networks:
+  music-net:
+    driver: bridge
+
+volumes:
+  beat-data:
+  playlist-data:
