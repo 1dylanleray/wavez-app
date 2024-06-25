@@ -3,7 +3,7 @@ version: '3.8'
 services:
   beat-service:
     build:
-      context: ./services/beatService/beatService
+      context: ./services/beatService
     ports:
       - "3000:3000"
     networks:
@@ -13,7 +13,7 @@ services:
 
   beats-service:
     build:
-      context: ./services/beatsService/beatsService
+      context: ./services/beatsService
     ports:
       - "3001:3001"
     networks:
@@ -23,7 +23,7 @@ services:
 
   playlist-service:
     build:
-      context: ./services/playlistService/playlistService
+      context: ./services/playlistService
     ports:
       - "3002:3002"
     networks:

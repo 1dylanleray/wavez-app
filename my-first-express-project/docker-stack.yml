@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  beat-service:
+    image: beat-service:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - music-net
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+  beats-service:
+    image: beats-service:latest
+    ports:
+      - "3001:3001"
+    networks:
+      - music-net
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+  playlist-service:
+    image: playlist-service:latest
+    ports:
+      - "3002:3002"
+    networks:
+      - music-net
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+networks:
+  music-net:
+    driver: overlay
